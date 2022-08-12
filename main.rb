@@ -1,5 +1,5 @@
 class Cell 
-    attr_accessors :alive, :position_x, :position_y, :aside, :state_cell
+    attr_accessor :alive, :position_x, :position_y, :aside, :state_cell
     def initialize 
         @alive = false
         @position_x = 0
@@ -18,7 +18,7 @@ class Cell
 end
 
 class  Game_table 
-    attr_accessors :table_height, :table_width, :table, :number_generation
+    attr_accessor :table_height, :table_width, :table, :number_generation
     def initialize(table_height, table_width)
         @number_generation = 1
         @table_height = table_height
